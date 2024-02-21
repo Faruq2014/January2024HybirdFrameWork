@@ -1,0 +1,45 @@
+
+		why should I develop Hybrid frame work?
+			 1. Test data coming from out source
+			      a. excel sheet
+			      b. data base
+			      c. xml file
+			      d json file
+			      
+			 2. data are key and values pair
+			 3. most of the case: you can not put values in the class file
+			    because if you write on class file
+			          it is tough to change values in the production
+			               you must comple and push-- as a result server has to stop for hours
+			   because if you write on properties file 
+			        only refresh is enough-- server did not have to stop
+			        
+			        
+		what is your Hybrid Frame work contains/ how to build Hybrid Frame work
+		can you explain Hybrid frame work?
+		
+		     1. propertise file such as application.propertise
+		               package= utlities
+		                Class=  PropertiseReader 
+		     2. package= base-------> is a relationship---inheritance
+		         class= BaseTest
+		     3. Page Object Model with Page Factory---->has a relationship---class refferencial 
+		          a. page side
+		            package=   pages
+		              class =LoginPage, RegistrationPage
+		          b. test side
+		            package=   tests
+		              class =loginTest
+		       4. Build TestNg.xml file appropriately
+		             such as smoke, regression and so on
+		             and design with group, listeners
+		       5. build sure fire plugin for maven run
+		             so you can run it from remote/Jenkins
+		       6. Reporting 
+		           a. build with i test listener for index.html reporting
+		           b. you can use third party tool
+		                 such Extent Report
+		       7. take screen shot
+		             a. build a package and a class for screen shot
+		             b. call the screen shot method in the ITestListener class as necessary
+           
