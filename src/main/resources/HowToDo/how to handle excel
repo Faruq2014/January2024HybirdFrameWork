@@ -1,0 +1,38 @@
+excel has data types--all the data types such as
+           text=String
+           number= int, double, long,
+           boolean==boolean
+           date==date
+            
+and excel automaticly understand data types
+also automaticly configure
+
+excel has row such as 1, 2, 3
+excel has column such as A,B,C
+where row and column meet then it is called Cell
+and the value in that intersection is called Cell value
+
+in Selenium most of the time data is WebElement or String
+so we must convert any other data in excel to text data
+
+but if your data in selenium or java is numeric then excel data should be double
+
+in Java we handle excel with array list 
+and with index
+in index row start from= 0
+and column start from ==0
+Cell is the intersection of row and column
+
+
+/*
+ * name of the workbook==registration
+ * sheet name=sheet1,sheet2, test,
+ * row==start from 0
+ * column == start from 0
+ * cell== intersection row and column
+ * Faruq=registration.xlsx-->Sheet1-->Row 1-->Column 0==String cell
+ * index=start from 0
+ * row start from 0
+ * column start from 0
+ * row always come first
+ */
