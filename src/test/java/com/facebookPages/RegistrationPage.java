@@ -46,6 +46,15 @@ public class RegistrationPage {
 		mobile.sendKeys(enterMobileNumber);
 		return fName;
 	}
+	
+	@FindBy(name = "reg_email_confirmation__")
+	public WebElement reEnterEmail;
+
+	public WebElement reEnterEmail(String reEnterEmailAddress) {
+		reEnterEmail.sendKeys(reEnterEmailAddress);
+		return reEnterEmail;
+		
+	}
 
 	@FindBy(id = "password_step_input")
 	public WebElement password;
